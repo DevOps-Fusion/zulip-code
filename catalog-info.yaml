@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: zulip
+  description: Zulip chat service
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/DevOps-Fusion/zulip-chat-code/catalog-info.yaml
+    jenkins.io/job-name: "zulip-chat-pipeline"
+spec:
+  type: service
+  lifecycle: production
+  owner: DevOps-Fusion
+  repository: https://github.com/DevOps-Fusion/zulip-chat-code
+  system: devops-fusion-system
+  links:
+    - url: http://54.242.131.80:8080/job/zulip-chat-pipeline/
+      title: Jenkins Pipeline
+    - url: https://100.24.37.22:30138/namespace/devopstask/workloads
+      title: Kubernetes Deployment
