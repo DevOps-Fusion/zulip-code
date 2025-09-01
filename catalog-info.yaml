@@ -5,7 +5,7 @@ metadata:
   description: Zulip chat service
   annotations:
     backstage.io/managed-by-location: url:https://github.com/DevOps-Fusion/zulip-chat-code/catalog-info.yaml
-    jenkins.io/job-name: "zulip-chat-pipeline"
+    jenkins.io/job-full-name: "zulip-chat-pipeline"
 spec:
   type: service
   lifecycle: production
